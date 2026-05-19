@@ -468,6 +468,16 @@ details p {
   }
 }
 
+@media (max-width: 520px) {
+  .hero-visual {
+    display: none;
+  }
+
+  .hero {
+    padding-bottom: 52px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
