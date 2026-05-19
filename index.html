@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voice Input Pro Waitlist</title>
+    <meta
+      name="description"
+      content="Voice Input ProはMacの任意アプリで使えるOpenAI APIキー持参型の音声入力ツールです。正式版通知と無料ベータ候補を募集しています。"
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a class="brand" href="#top" aria-label="Voice Input Pro">
+          <span class="brand-mark" aria-hidden="true">V</span>
+          <span>Voice Input Pro</span>
+        </a>
+        <div class="nav-links">
+          <a href="#status">現在の状態</a>
+          <a href="#beta">ベータ募集</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <h1 id="hero-title">Macのどのアプリにも、声で下書きを入れる。</h1>
+          <p class="lead">
+            Voice Input Proは、Option + Spaceで録音し、自分のOpenAI APIキーを使って文字起こしし、入力中のアプリへ貼り付けるメニューバー常駐ツールです。
+          </p>
+          <p class="english-note">
+            A lightweight macOS menu bar dictation tool powered by your own OpenAI API key.
+          </p>
+          <div class="actions">
+            <a
+              class="button"
+              href="#form-setup"
+              data-waitlist-link
+              data-ready-label="待機リストに登録する"
+              data-pending-label="フォーム準備中"
+            >フォーム準備中</a>
+            <a class="button secondary" href="#beta">ベータ条件を見る</a>
+          </div>
+          <p class="status-line" data-form-status>
+            Google Form URL未設定です。config.js に公開URLを入れるまで外部送信は発生しません。
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-label="Voice Input Proの利用イメージ">
+          <div class="product-frame">
+            <div class="menu-bar">
+              <span class="menu-pill"><span class="mic-dot" aria-hidden="true"></span> Recording</span>
+              <span>Option + Space</span>
+            </div>
+            <div class="transcript">
+              <div class="target-app">
+                <div class="target-header">
+                  <span>Draft in any Mac app</span>
+                  <span>Auto Paste</span>
+                </div>
+                <div class="target-body">
+                  <p>
+                    今日の議事録です。まず決定事項を3つに整理し、次に担当者ごとのアクションを書き出します。<span class="cursor" aria-hidden="true"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="dictation-strip" aria-hidden="true">
+                <span>OpenAI API key<br>stored in Keychain</span>
+                <span>Language hint<br>Japanese / English</span>
+                <span>No developer<br>audio server</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tool" aria-labelledby="tool-title">
+        <div class="section-inner">
+          <h2 id="tool-title">何のツールか</h2>
+          <p>
+            メール、仕様書、議事録、サポート返信、メモを書くときに、音声で下書きを作るためのMacアプリです。音声入力を独立した画面に閉じ込めず、今書いているアプリへ戻すことを重視しています。
+          </p>
+          <div class="grid">
+            <article class="card">
+              <h3>どのアプリでも使う</h3>
+              <p>メニューバーから録音し、文字起こし結果をクリップボードまたはアクティブなアプリへ渡します。</p>
+            </article>
+            <article class="card">
+              <h3>自分のAPIキーを使う</h3>
+              <p>購入者自身のOpenAI APIキーを使います。APIキーはmacOS Keychainに保存します。</p>
+            </article>
+            <article class="card">
+              <h3>用語を補正する</h3>
+              <p>Language HintとVocabulary Promptで、人名、製品名、略語、句読点の好みを伝えられます。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="status" aria-labelledby="status-title">
+        <div class="section-inner split">
+          <div>
+            <h2 id="status-title">現在の状態</h2>
+            <p>
+              Apple Developer Program登録前のため、Developer ID署名・公証済みの正式版はまだ未リリースです。正式販売ZIP、ダウンロードボタン、有料購入リンクは公開していません。
+            </p>
+          </div>
+          <div class="notice">
+            <strong>公開方針:</strong>
+            未署名/ad-hoc版を不特定多数へ有料配布しません。まずは待機リストと無料ベータ候補で、需要と支払い意思を検証します。
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="beta" aria-labelledby="beta-title">
+        <div class="section-inner split">
+          <div>
+            <h2 id="beta-title">ベータ募集</h2>
+            <p>
+              少人数の無料ベータ協力者を探しています。ベータは正式な公証済み配布ではなく、明示同意ありのテスト扱いです。
+            </p>
+          </div>
+          <ul class="check-list">
+            <li>Macでメール、仕様書、議事録、メモなどをよく書く。</li>
+            <li>OpenAI APIキーを自分で用意できる。</li>
+            <li>macOSの権限設定とベータ版の注意点を理解できる。</li>
+            <li>セットアップ、精度、日常利用の違和感を共有できる。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="requirements" aria-labelledby="requirements-title">
+        <div class="section-inner">
+          <h2 id="requirements-title">要件</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>macOS 13以降</h3>
+              <p>正式版もmacOS 13以降を想定しています。</p>
+            </article>
+            <article class="card">
+              <h3>OpenAI APIキー</h3>
+              <p>API利用料込みの商品ではありません。利用者自身のOpenAIアカウントでAPIキーを用意します。</p>
+            </article>
+            <article class="card">
+              <h3>権限設定</h3>
+              <p>録音にはMicrophone権限、自動貼り付けにはAccessibility権限が必要です。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="privacy" aria-labelledby="privacy-title">
+        <div class="section-inner split">
+          <div>
+            <h2 id="privacy-title">Privacy</h2>
+            <p>
+              開発者運営の音声サーバーは使いません。録音した音声は、利用者自身のOpenAI APIキーでOpenAIへ直接送信されます。
+            </p>
+          </div>
+          <ul class="check-list">
+            <li>OpenAI APIキーはmacOS Keychainに保存します。</li>
+            <li>診断ログはローカルに保存され、共有は利用者の判断です。</li>
+            <li>フォーム、メール、DMにAPIキーや秘密情報を入力しないでください。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="section-inner">
+          <h2 id="faq-title">FAQ</h2>
+          <div class="faq">
+            <details>
+              <summary>正式版は公開済みですか？</summary>
+              <p>いいえ。公証済み正式版は未リリースです。正式版の通知と無料ベータ候補だけを受け付けています。</p>
+            </details>
+            <details>
+              <summary>ベータ版は有料ですか？</summary>
+              <p>いいえ。ベータは無料・少人数・明示同意ありのテスト扱いです。</p>
+            </details>
+            <details>
+              <summary>OpenAI API利用料は含まれますか？</summary>
+              <p>含まれません。利用者自身のOpenAI APIキーを使うため、API利用料は利用者のOpenAIアカウントに発生します。</p>
+            </details>
+            <details>
+              <summary>正式版の価格はいくらですか？</summary>
+              <p>買い切り 9 USD / 1500円前後を仮説として検証しています。導入支援は 12800円以上の支払い意思があるか確認します。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="form-setup" aria-labelledby="cta-title">
+        <div class="section-inner">
+          <div>
+            <h2 id="cta-title">正式版通知とベータ候補に登録する</h2>
+            <p>
+              Google Form URLを設定すると、このボタンから待機リストへ進めます。未設定の間は外部送信されません。
+            </p>
+            <p data-contact-label hidden></p>
+          </div>
+          <a
+            class="button"
+            href="#form-setup"
+            data-waitlist-link
+            data-ready-label="Google Formを開く"
+            data-pending-label="フォーム準備中"
+          >フォーム準備中</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Voice Input Pro waitlist page. This phase collects release notifications and beta interest only.</p>
+    </footer>
+
+    <script src="./config.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

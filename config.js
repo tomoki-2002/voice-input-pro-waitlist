@@ -1,0 +1,4 @@
+window.VOICE_INPUT_PRO_WAITLIST = {
+  GOOGLE_FORM_URL: "",
+  CONTACT_LABEL: ""
+};
