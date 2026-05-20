@@ -1,28 +1,34 @@
-# Voice Input Pro 待機リストサイト
+# Voice Input Pro Waitlist
 
-依存なしの静的サイトです。`index.html` をブラウザで直接開けます。
+Voice Input Pro is a small macOS menu bar dictation tool for people who write a lot on Mac.
 
-## フォームURLの設定
+[Join the waitlist / beta candidate list](https://tomoki-2002.github.io/voice-input-pro-waitlist/?utm_source=github&utm_medium=readme&utm_campaign=waitlist)
 
-Google Formsを作成したら、`config.js` に公開URLを入れます。
+## What It Does
 
-```js
-window.VOICE_INPUT_PRO_WAITLIST = {
-  GOOGLE_FORM_URL: "https://forms.gle/...",
-  CONTACT_LABEL: ""
-};
-```
+- Press `Option + Space` to start and stop recording.
+- Transcribe with your own OpenAI API key.
+- Paste the transcript into the Mac app you were already using.
+- Store the API key in macOS Keychain.
+- Avoid a developer-operated audio server.
 
-`GOOGLE_FORM_URL` が空の場合、CTAは「フォーム準備中」と表示され、外部送信されません。
+## Current Status
 
-## 公開前チェック
+The notarized public release is not available yet. This repository only hosts the waitlist landing page.
 
-- Google Form URLが正しい。
-- Google Forms側でメールアドレス収集が有効。
-- 回答がGoogle Sheetsに保存される。
-- ページにZIPダウンロード、有料購入、Gumroad決済リンクがない。
-- 「公証済み正式版は未リリース」「OpenAI APIキーは利用者自身が用意」「ベータは無料・少人数・同意あり」が明記されている。
+There is no public app download, ZIP release, payment link, or unsigned public distribution available from this repository.
 
-## GitHub Pagesで公開する場合
+## Public Links
 
-GitHub Pagesの公開元を `waitlist-site/` 相当の静的ファイルに向けます。リポジトリ構成により、`docs/` 配下へコピーするか、専用ブランチで公開してください。
+- Landing page: https://tomoki-2002.github.io/voice-input-pro-waitlist/?utm_source=github&utm_medium=readme&utm_campaign=waitlist
+- Repository: https://github.com/tomoki-2002/voice-input-pro-waitlist
+
+## Who Should Join
+
+- You write emails, specs, meeting notes, support replies, or drafts on Mac.
+- You can bring your own OpenAI API key.
+- You are comfortable testing a small macOS productivity tool before the public release.
+
+## Development Notes
+
+This repository contains only the static waitlist site. The macOS app source, build scripts, signing assets, and test ZIPs are intentionally not published here.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tomoki-2002.github.io/voice-input-pro-waitlist/sitemap.xml
